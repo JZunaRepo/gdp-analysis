@@ -35,7 +35,7 @@ def get_state_gdp(data, state, year):
     if gdpstate == state:
       new_num = num_item
   gdp = data[new_num - 1][year]
-  print(gdp)
+  print(float(gdp))
   
 
 # save each row into a list (TODO: change to your path!)
@@ -54,3 +54,6 @@ print(get_highest_gdp(list_data, '2020'))
 print(get_lowest_gdp(list_data, '2020'))
 
 get_state_gdp(list_data, "New York", "2019")
+
+year2019 = get_state_gdp(list_data, "New York", "2019")
+print(type(year2019))
